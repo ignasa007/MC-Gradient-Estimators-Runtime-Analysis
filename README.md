@@ -16,14 +16,14 @@ The code contains:
 
 To install the required dependencies:
 
-```
-  source monte_carlo_gradients/setup.sh
+```bash
+source monte_carlo_gradients/setup.sh
 ```
 
 A runtime analysis of the experiments from Section 3 can be found in `runtime-exp_dummy-data.ipynb`. To analyse the runtime for the Bayesian LR experimtents, run
 
-```
-  python -m monte_carlo_gradients.main ${estimator} ${control-variate} ${N}
+```bash
+python -m monte_carlo_gradients.main ${estimator} ${control-variate} ${N}
 ```
 where `estimator` is one of ("score_function", "pathwise", "measure_valued"), `control-variate` is one of ("none", "moving_avg", "delta") and `N` is an positive integer. This saves the results in the directory `./results/N-${N}/estimator-${estimator}/cv-${control-variate}`.
 
@@ -31,8 +31,8 @@ Note that no control-variate can be used with measure-valued gradient because th
 
 To save results for all methods with a particular sequence of values of `N`, edit the iterator in `runtime-exp_bayesian-lr.sh` appropriately and run
 
-```
-  source runtime-exp_bayesian-lr.sh
+```bash
+source runtime-exp_bayesian-lr.sh
 ```
 
 The current implementation runs from `N = 30` to `N = 400` with a step size of `5`. Finally, the results can be compared in `analysis.ipynb`.
