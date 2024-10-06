@@ -3,7 +3,7 @@
 This is the example code for the following paper, adapted for presentation for the course Machine Learning Seminar (COMP0168) at UCL:
 
 > Shakir Mohamed, Mihaela Rosca, Michael Figurnov, Andriy Mnih
-  *Monte Carlo Gradient Estimation in Machine Learning*.  [\[arXiv\]](https://arxiv.org/abs/1906.10652).
+  *Monte Carlo Gradient Estimation in Machine Learning*.  [\[JMLR\]](https://jmlr.org/papers/v21/19-346.html).
 
 ## Running the code
 
